@@ -1,0 +1,108 @@
+Navratri Sales Analysis – Data Analysis Project
+
+
+1. Can you briefly explain your Navratri Sales Analysis project?
+✅ Answer:
+"I analyzed a dataset of Navratri festival sales to understand customer purchasing behavior. The objective was to identify key customer segments based on age, gender, occupation, and product category to help businesses improve their marketing strategies. My key finding was that married women aged 26-35 from UP, Maharashtra, and Karnataka, working in IT, Healthcare, and Aviation, prefer Food, Clothing, and Electronics products."
+________________________________________
+2. What were the key insights from your analysis?
+✅ Answer:
+•	Women (26-35 years, married) were the highest spenders.
+•	Top spending states: Uttar Pradesh, Maharashtra, Karnataka.
+•	Popular professions among high spenders: IT, Healthcare, Aviation.
+•	Best-selling product categories: Food, Clothing, Electronics.
+•	Festivals significantly boost sales, making them the best time for targeted marketing.
+________________________________________
+3. What challenges did you face in analyzing this dataset?
+✅ Answer:
+•	Missing values in columns like "Status" and "Unnamed1."
+•	Inconsistent age groups (some were labeled as ranges, others as exact numbers).
+•	Duplicate records, which affected the accuracy of insights.
+•	Different product IDs for the same category, requiring categorization.
+I handled these issues by cleaning the dataset, removing duplicates, and using data imputation for missing values.
+________________________________________
+4. How did you handle missing or incorrect data?
+✅ Answer:
+"I used different techniques depending on the issue:
+•	Dropped columns like ‘Unnamed1’ since they added no value.
+•	Filled missing values in ‘Status’ based on similar customer records.
+•	Mapped ‘Product_ID’ values to standardized product categories for better analysis.
+•	Used median age for missing age values to avoid extreme variations."
+________________________________________
+5. How did you visualize the data? Which tools did you use?
+✅ Answer:
+"I used Python (Matplotlib, Seaborn, Pandas) to create:
+•	Bar charts to compare purchase behavior across age groups.
+•	Pie charts to show the gender-wise distribution of sales.
+•	Heatmaps to analyze customer spending patterns across states.
+•	Box plots to detect outliers in purchase amounts."
+________________________________________
+6. What patterns did you notice in customer behavior?
+✅ Answer:
+•	Married women aged 26-35 spent the most.
+•	High sales in IT, Healthcare, and Aviation sectors due to high purchasing power.
+•	Navratri festival season boosts electronic and clothing sales.
+•	Customers from UP, Maharashtra, and Karnataka were top buyers.
+________________________________________
+7. How did you analyze which products were most popular?
+✅ Answer:
+"I grouped the data by Product_Category and calculated:
+•	Total number of orders per category.
+•	Total sales revenue per category.
+•	Average amount spent per product.
+This helped me identify that Food, Clothing, and Electronics were the most preferred categories."
+________________________________________
+8. How did you analyze customer location trends?
+✅ Answer:
+"I grouped customers by State and Zone and compared:
+•	Total sales per state.
+•	Average order value per state.
+•	Purchase trends by urban vs. rural zones.
+This helped me find that states like UP, Maharashtra, and Karnataka had the highest sales."
+________________________________________
+9. How can businesses use your insights for marketing?
+✅ Answer:
+•	Targeted promotions: Focus on married women aged 26-35.
+•	Personalized ads: Show relevant products based on occupation & location.
+•	Stock planning: Ensure higher inventory for Food, Clothing, and Electronics before the festival season.
+•	Regional campaigns: Invest more in states like UP, Maharashtra, and Karnataka.
+________________________________________
+10. How did you handle outliers in purchase amounts?
+✅ Answer:
+"I used the IQR (Interquartile Range) method to detect extreme values. If an order amount was far beyond the upper limit, I checked if it was a genuine high purchase or an error. If it was a valid transaction, I kept it; otherwise, I removed it."
+________________________________________
+11. How did you calculate customer lifetime value (CLV) in this dataset?
+✅ Answer:
+"I approximated CLV by calculating:
+CLV = Average Order Value × Purchase Frequency × Customer Retention Rate
+Since we had only one festival's data, I used repeat orders within the dataset to estimate purchase frequency."
+________________________________________
+12. What kind of machine learning models could you use for this dataset?
+✅ Answer:
+"I could apply:
+•	Classification models (Logistic Regression, Decision Trees) to predict whether a customer will purchase again.
+•	Clustering (K-Means) to segment customers based on spending behavior.
+•	Recommendation systems (Collaborative Filtering) to suggest personalized products."
+________________________________________
+13. If you had access to more data, what additional insights would you find?
+✅ Answer:
+"If I had historical purchase data, I could:
+•	Analyze year-over-year sales trends.
+•	Find seasonal effects on different products.
+•	Improve customer segmentation for personalized marketing.
+•	Predict sales for future festivals."
+________________________________________
+14. How did you analyze customer demographics?
+✅ Answer:
+"I analyzed Age, Gender, Occupation, and Marital Status using:
+•	Histograms & box plots for age distribution.
+•	Bar charts for gender-based purchase trends.
+•	Stacked bar charts to compare married vs. unmarried spending behavior.
+This showed that married women (26-35 years) were the biggest spenders."
+________________________________________
+15. How would you improve this project in the future?
+✅ Answer:
+"I would:
+1.	Add time-series analysis to study how sales change over multiple years.
+2.	Use NLP to analyze customer reviews & sentiment on purchased products.
+3.	Include competitor analysis to compare sales trends with other brands."
